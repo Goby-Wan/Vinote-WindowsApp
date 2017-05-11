@@ -1,0 +1,11 @@
+c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\bin\Debug\VinoAdmin.exe.config
+c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\obj\Debug\VinoAdmin.vbprojResolveAssemblyReference.cache
+c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\obj\Debug\VinoAdmin.Form1.resources
+c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\obj\Debug\VinoAdmin.Resources.resources
+c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\obj\Debug\VinoAdmin.vbproj.GenerateResource.Cache
+c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\bin\Debug\VinoAdmin.exe
+c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\bin\Debug\VinoAdmin.pdb
+c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\bin\Debug\VinoAdmin.xml
+c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\obj\Debug\VinoAdmin.exe
+c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\obj\Debug\VinoAdmin.xml
+c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\obj\Debug\VinoAdmin.pdb
