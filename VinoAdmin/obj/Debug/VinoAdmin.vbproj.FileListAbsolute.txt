@@ -9,3 +9,16 @@ c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\bin\Deb
 c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\obj\Debug\VinoAdmin.exe
 c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\obj\Debug\VinoAdmin.xml
 c:\users\domin\documents\visual studio 2015\Projects\VinoAdmin\VinoAdmin\obj\Debug\VinoAdmin.pdb
+D:\Desktop\Vinote-WindowsApp-master\Vinote-WindowsApp-master\VinoAdmin\bin\Debug\VinoAdmin.exe.config
+D:\Desktop\Vinote-WindowsApp-master\Vinote-WindowsApp-master\VinoAdmin\bin\Debug\VinoAdmin.exe
+D:\Desktop\Vinote-WindowsApp-master\Vinote-WindowsApp-master\VinoAdmin\bin\Debug\VinoAdmin.pdb
+D:\Desktop\Vinote-WindowsApp-master\Vinote-WindowsApp-master\VinoAdmin\bin\Debug\VinoAdmin.xml
+D:\Desktop\Vinote-WindowsApp-master\Vinote-WindowsApp-master\VinoAdmin\obj\Debug\VinoAdmin.vbprojResolveAssemblyReference.cache
+D:\Desktop\Vinote-WindowsApp-master\Vinote-WindowsApp-master\VinoAdmin\obj\Debug\VinoAdmin.Form1.resources
+D:\Desktop\Vinote-WindowsApp-master\Vinote-WindowsApp-master\VinoAdmin\obj\Debug\VinoAdmin.Resources.resources
+D:\Desktop\Vinote-WindowsApp-master\Vinote-WindowsApp-master\VinoAdmin\obj\Debug\VinoAdmin.vbproj.GenerateResource.Cache
+D:\Desktop\Vinote-WindowsApp-master\Vinote-WindowsApp-master\VinoAdmin\obj\Debug\VinoAdmin.exe
+D:\Desktop\Vinote-WindowsApp-master\Vinote-WindowsApp-master\VinoAdmin\obj\Debug\VinoAdmin.xml
+D:\Desktop\Vinote-WindowsApp-master\Vinote-WindowsApp-master\VinoAdmin\obj\Debug\VinoAdmin.pdb
+D:\Desktop\Vinote-WindowsApp-master\Vinote-WindowsApp-master\VinoAdmin\obj\Debug\VinoAdmin.FormModifier.resources
+D:\Desktop\Vinote-WindowsApp-master\Vinote-WindowsApp-master\VinoAdmin\obj\Debug\VinoAdmin.FormAjouter.resources
