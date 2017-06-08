@@ -22,41 +22,41 @@ Partial Class FormAjouter
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Sauvegarde = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Bt_Sauvegarde = New System.Windows.Forms.Button()
+        Me.Bt_Annuler = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Sauvegarde
+        'Bt_Sauvegarde
         '
-        Me.Sauvegarde.Location = New System.Drawing.Point(40, 225)
-        Me.Sauvegarde.Name = "Sauvegarde"
-        Me.Sauvegarde.Size = New System.Drawing.Size(75, 23)
-        Me.Sauvegarde.TabIndex = 0
-        Me.Sauvegarde.Text = "Sauvegarder"
-        Me.Sauvegarde.UseVisualStyleBackColor = True
+        Me.Bt_Sauvegarde.Location = New System.Drawing.Point(40, 225)
+        Me.Bt_Sauvegarde.Name = "Bt_Sauvegarde"
+        Me.Bt_Sauvegarde.Size = New System.Drawing.Size(75, 23)
+        Me.Bt_Sauvegarde.TabIndex = 0
+        Me.Bt_Sauvegarde.Text = "Sauvegarder"
+        Me.Bt_Sauvegarde.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Bt_Annuler
         '
-        Me.Button2.Location = New System.Drawing.Point(160, 225)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Annuler"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Bt_Annuler.Location = New System.Drawing.Point(160, 225)
+        Me.Bt_Annuler.Name = "Bt_Annuler"
+        Me.Bt_Annuler.Size = New System.Drawing.Size(75, 23)
+        Me.Bt_Annuler.TabIndex = 1
+        Me.Bt_Annuler.Text = "Annuler"
+        Me.Bt_Annuler.UseVisualStyleBackColor = True
         '
         'FormAjouter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Sauvegarde)
+        Me.Controls.Add(Me.Bt_Annuler)
+        Me.Controls.Add(Me.Bt_Sauvegarde)
         Me.Name = "FormAjouter"
         Me.Text = "FormAjouter"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Sauvegarde As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Bt_Sauvegarde As Button
+    Friend WithEvents Bt_Annuler As Button
 End Class

@@ -12,6 +12,7 @@
     Public photo As String
     Public exposant As Exposant
 
+    ''Constructeur par défaut
     Sub New()
         id = 0
         appellation = "null"

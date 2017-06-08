@@ -6,6 +6,7 @@
     Public password As String
     Public photo As String
 
+    ''Constructeur par défaut
     Sub New()
         id = 0
         nom = "null"

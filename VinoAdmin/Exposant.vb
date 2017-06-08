@@ -14,6 +14,7 @@
     Public siteweb As String
     Public photo As String
 
+    ''Constructeur par défaut
     Sub New()
         id = 0
         emplacement = "null"

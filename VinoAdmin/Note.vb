@@ -6,6 +6,7 @@
     Public vin As Vin
     Public invite As Invite
 
+    ''Constructeur par défaut
     Sub New()
         id = 0
         timestamp = 0
@@ -14,6 +15,7 @@
         vin = New Vin
         invite = New Invite
     End Sub
+
 
     Public Function toArrayString()
         Dim result As String() = {id.ToString(), timestamp, note, commentaire}

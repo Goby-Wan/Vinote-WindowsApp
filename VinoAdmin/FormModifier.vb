@@ -6,57 +6,64 @@ Public Class FormModifier
     Dim typeObjet As String
     Dim fenetreP As Form1
 
+    ''Constructeur de la classe
     Public Sub init(dic As Dictionary(Of String, String), typeOb As String, fenP As Form1)
         dicoData = dic
         typeObjet = typeOb
         fenetreP = fenP
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    ''Ferme le formulaire lors du clique sur le bouton Annuler 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Bt_Annuler.Click
         Me.Close()
     End Sub
 
+    ''Chargement du formulaire de modification,
+    ' Creation des labels, des textbox, remplissage des textbox avec l'information correspondante
+    ' Creation de bouton et paramètrage de leurs positionnements
     Private Sub FormModifier_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Dim x As Integer
-        Dim y As Integer
-        Dim x_tab As Integer
-        Dim y_tab As Integer
+        Dim x As Integer = 50
+        Dim y As Integer = 30
+        Dim x_tab As Integer = 200
+        Dim y_tab As Integer = 50
 
-        x = 50
-        y = 30
-        x_tab = 200
-        y_tab = 50
 
         For Each kvp As KeyValuePair(Of String, String) In dicoData
-            Dim label = New Label
-            label.Text = kvp.Key
-            label.Size = New System.Drawing.Size(x_tab - 50, y_tab - 10)
-            label.Location = New System.Drawing.Point(x, y)
+            Dim label = New Label With {
+                .Text = kvp.Key,
+                .Size = New System.Drawing.Size(x_tab - 50, y_tab - 10),
+                .Location = New System.Drawing.Point(x, y)
+            }
             Me.Controls.Add(label)
 
-            Dim input = New TextBox
-            input.Text = kvp.Value
-            input.Name = kvp.Key
-            input.Size = New System.Drawing.Size(x_tab - 50, y_tab - 10)
-            input.Location = New System.Drawing.Point(x + x_tab, y)
+            Dim input = New TextBox With {
+                .Text = kvp.Value,
+                .Name = kvp.Key,
+                .Size = New System.Drawing.Size(x_tab - 50, y_tab - 10),
+                .Location = New System.Drawing.Point(x + x_tab, y)
+            }
             Me.Controls.Add(input)
 
             y = y + y_tab
 
         Next
+
+        'Definit la taille de la fenetre et la position des boutons
         Me.Size = New System.Drawing.Size(500, y + 100)
-        Button1.Location = New Point(100, y)
-        Button2.Location = New Point(300, y)
+        Bt_Sauvegarde.Location = New Point(100, y)
+        Bt_Annuler.Location = New Point(300, y)
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        ' Créer une chaine json
-        Dim content As String
-        content = "{"
-        Dim premier As Boolean
-        premier = True
+    ''Creer la chaine Json avec les nouveaux paramètres entrée par l'utilisateur
+    ''et appel la fonction sendRequest pour l'envoyer au serveur
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Bt_Sauvegarde.Click
+
+        Dim content As String = "{"
+        Dim premier As Boolean = True
+
+        ' La variable premier permet de ne pas afficher l'id
         For Each kvp As KeyValuePair(Of String, String) In dicoData
             If (Not premier) Then
                 content = content + ","
@@ -70,18 +77,18 @@ Public Class FormModifier
                     content = content + """" + kvp.Key + """:""" + Me.Controls.Item(kvp.Key).Text + """"
             End Select
         Next
+
         content = content + "}"
         Console.WriteLine(content)
 
-        Dim uri As New Uri("http://192.168.2.130/vinote/web/app_dev.php/" & typeObjet & "/" & Me.Controls.Item("id").Text)
+        Dim uri As New Uri("http://localhost/vinote/web/app_dev.php/" & typeObjet & "/" & Me.Controls.Item("id").Text)
         Dim data = Encoding.UTF8.GetBytes(content)
         Console.WriteLine(uri)
-        Console.WriteLine(content)
+
 
         Form1.SendRequest(uri, data, "application/json", "PUT")
-        'Form1.btCharge_Click(sender, e)
-
         MsgBox("Modification effectuée")
+
         fenetreP.chargement()
         fenetreP.changementListe()
         Me.Close()

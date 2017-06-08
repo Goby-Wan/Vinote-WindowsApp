@@ -23,9 +23,9 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Bt_ajouter = New System.Windows.Forms.Button()
+        Me.Bt_Modification = New System.Windows.Forms.Button()
+        Me.Bt_supprimer = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -39,32 +39,32 @@ Partial Class Form1
         Me.DataGridView1.Size = New System.Drawing.Size(598, 220)
         Me.DataGridView1.TabIndex = 1
         '
-        'Button1
+        'Bt_ajouter
         '
-        Me.Button1.Location = New System.Drawing.Point(44, 281)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Ajouter"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Bt_ajouter.Location = New System.Drawing.Point(44, 281)
+        Me.Bt_ajouter.Name = "Bt_ajouter"
+        Me.Bt_ajouter.Size = New System.Drawing.Size(75, 23)
+        Me.Bt_ajouter.TabIndex = 8
+        Me.Bt_ajouter.Text = "Ajouter"
+        Me.Bt_ajouter.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Bt_Modification
         '
-        Me.Button2.Location = New System.Drawing.Point(277, 281)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Modifier"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Bt_Modification.Location = New System.Drawing.Point(277, 281)
+        Me.Bt_Modification.Name = "Bt_Modification"
+        Me.Bt_Modification.Size = New System.Drawing.Size(75, 23)
+        Me.Bt_Modification.TabIndex = 9
+        Me.Bt_Modification.Text = "Modifier"
+        Me.Bt_Modification.UseVisualStyleBackColor = True
         '
-        'Button3
+        'Bt_supprimer
         '
-        Me.Button3.Location = New System.Drawing.Point(520, 281)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 10
-        Me.Button3.Text = "Supprimer"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Bt_supprimer.Location = New System.Drawing.Point(520, 281)
+        Me.Bt_supprimer.Name = "Bt_supprimer"
+        Me.Bt_supprimer.Size = New System.Drawing.Size(75, 23)
+        Me.Bt_supprimer.TabIndex = 10
+        Me.Bt_supprimer.Text = "Supprimer"
+        Me.Bt_supprimer.UseVisualStyleBackColor = True
         '
         'ComboBox1
         '
@@ -81,9 +81,9 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(622, 324)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Bt_supprimer)
+        Me.Controls.Add(Me.Bt_Modification)
+        Me.Controls.Add(Me.Bt_ajouter)
         Me.Controls.Add(Me.DataGridView1)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -94,8 +94,8 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents Bt_ajouter As Button
+    Friend WithEvents Bt_Modification As Button
+    Friend WithEvents Bt_supprimer As Button
     Friend WithEvents ComboBox1 As ComboBox
 End Class
